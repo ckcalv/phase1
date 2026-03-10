@@ -1,0 +1,39 @@
+/* Welcome heading only */
+.welcome {
+    font-size: 3em;
+    text-align: center;
+    padding-top: 1em;
+    padding-bottom: 1em;
+}
+
+article p, aside p {
+    font-size: 1rem;
+    text-align: left;
+}
+
+.container {
+    padding-top: 2em;
+    min-height: 100%;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 3rem;
+    max-width: 100%;
+    margin: 0 auto;
+    align-items: start;
+    padding-inline: 2rem;
+}
+
+img {
+    width:80%;
+    height: 900%;
+    margin: 1em;
+    border: solid antiquewhite;
+}
+
+footer{
+    margin-top: 3em;
+}
+
+aside section{
+    margin-top: 5rem;
+}

@@ -1,38 +1,36 @@
-article p, aside p {
+article p{
     font-size: 1rem;
-    text-align: left;
+    text-align: left; /*text is as the start of the column*/
 }
 
 .container {
     padding-top: 2em;
+    /* container is at least full height of its parent */
     min-height: 100%;
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 3rem;
+    /* never wider than the viewport */
     max-width: 100%;
     margin: 0 auto;
+    /* columns start at the top, don't stretch*/
     align-items: start;
     padding-inline: 2rem;
 }
-
+/*formatting img*/
 article img {
-    display: block;
-    width: 120%;
-    height: 120%;
+     width: 100%;
+    height: auto;
     border: solid antiquewhite;
 }
+
+/*imgs are in a row placed at the top*/
 article figure{
     display: inline-block;
     vertical-align: top;
-    margin: 1em 1.5em 5em;
-    width: 170px;
-    height: 200px;
-    
-}
-aside figure{
-    width:30%;
-    height: 30%;
     margin: 1em;
+    width: 20%;
+    
 }
 
 footer{
@@ -42,9 +40,9 @@ footer{
 p a{
     color: rgb(0, 229, 255);
 }
-
+/*formatting video*/
 iframe {
     width: 100%;
-    height: 400px;
+    aspect-ratio: 16 / 9;
     border-radius: 1em;
 }

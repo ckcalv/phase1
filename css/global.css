@@ -1,32 +1,56 @@
 body {
+    /*Sets the font and colour scheme of pages */
     font-family: 'Noto Sans', Arial;
     background-color: rgb(26, 29, 35);
     color: antiquewhite;
     display: flex;
     flex-direction: column;
-    min-height: 100vh;
+    min-height: 100vh; /*body takes up the full screen height*/
 
 }
 
 header {
+    /*Colour scheme of headers*/
     background-color: rgb(36, 41, 46);
     color: antiquewhite;
     text-align: center;
     font-size: 3rem;
+    /*keeps header at the top of screen*/
+    position: sticky;
+    top: 0;
+    z-index: 100;
     
 }
+/*scaling the font size*/
+/*Smallest, Scaling based on vw, largest*/
+header h1{
+    font-size: clamp(1.5rem, 4vw, 3rem)
+}
 
+nav a{
+    font-size: clamp(0.75rem, 1.5vw, 1rem);
+}
+
+/*makes lists in a line without bullet points*/
 nav ul {
     list-style: none;
     display: flex;
     gap: 1em;
-    justify-content: center;
+    justify-content: center;    
+}
+
+nav {
+    /*keeps links at the top of screen and below the header*/
+    position: sticky;
+    top: 4rem;
+    z-index: 100;
+    background-color: rgb(26, 29, 35);
 }
 
 a {
     color: antiquewhite;
 }
-
+/*grows to fill entire space*/
 main{
     flex: 1;
 }

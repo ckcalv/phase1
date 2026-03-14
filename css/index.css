@@ -1,15 +1,16 @@
+/*makes welcome msg large and centred*/
 .welcome {
     font-size: 3em;
     text-align: center;
     padding-top: 1em;
     padding-bottom: 1em;
 }
-
+/*aligns text to start of column*/
 article p, aside p {
     font-size: 1rem;
     text-align: left;
 }
-
+/*container for main layout*/
 .container {
     padding-top: 2em;
     min-height: 100%;
@@ -21,10 +22,10 @@ article p, aside p {
     align-items: start;
     padding-inline: 2rem;
 }
-
+/*scaling of img*/
 img {
     width:80%;
-    height: 900%;
+    height: auto;
     margin: 1em;
     border: solid antiquewhite;
 }

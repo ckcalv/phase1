@@ -3,21 +3,18 @@
     padding: 2em;
     border-radius: 1em;
     border: 1px solid rgba(230, 237, 243, 0.1); 
-    max-width: 35%;
-    margin: 3% auto;
+    /*600px when possible if not then 80% */
+    width: min(80%, 600px);
+    /*2% top/bottom aligns middle*/
+    margin: 2% auto;
     color: white;
-}
-
-.form-buttons {
-    display: flex;
-    gap: 20px;
 }
 
 fieldset {
     border: 1px solid rgba(230, 237, 243, 0.1);
     padding: 2em;
 }
-
+/*form header larger and space to the left/right*/
 legend {
     color: antiquewhite;
     font-size: 1.5rem;

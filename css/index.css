@@ -13,6 +13,7 @@ article p, aside p {
 /*container for main layout*/
 .container {
     padding-top: 2em;
+    /*as tall as parent (main)*/
     min-height: 100%;
     display: grid;
     grid-template-columns: 2fr 1fr;

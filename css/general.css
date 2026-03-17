@@ -13,13 +13,11 @@ article p{
     /* never wider than the viewport */
     max-width: 100%;
     margin: 0 auto;
-    /* columns start at the top, don't stretch*/
-    align-items: start;
     padding-inline: 2rem;
 }
 /*formatting img*/
 article img {
-     width: 100%;
+    width: 100%;
     height: auto;
     border: solid antiquewhite;
 }

@@ -21,7 +21,7 @@ legend {
     padding: 0 0.5em;
 }
 
-input[type="text"], textarea{
+input[type="text"], textarea, input[type="email"],input[type="password"]{
     width: 100%;
     background-color: rgb(26, 29, 35);
     color: antiquewhite;
@@ -32,7 +32,7 @@ input[type="text"], input{
     margin-bottom: 1em;
 }
 
-.post-btn, .clear-btn{
+.post-btn, .clear-btn, .login-button{
     background-color: rgb(26, 29, 35);
     color: antiquewhite;
 }

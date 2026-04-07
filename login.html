@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Blog</title>
+    <title>login</title>
 
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/global.css">
@@ -32,26 +32,22 @@
     </nav>
     <main>
         <section class="blog">
-            
-            <form method="GET" action="">
+            <form method="POST" action="">
                 <fieldset>
-                    <legend>Add Blog</legend>
-                    <input type="text" id="blogTitle" placeholder="Title" required>
-                    <textarea id="blogContent" placeholder="Enter your text here" rows="8" required></textarea>
+                    <legend>User Login</legend>
+                    <p>
+                        <label>Email:</label>
+                        <input type="email" placeholder="Email Address" required>
+                    </p>
+                    <p>
+                        <label>Password:</label>
+                        <input type="password" placeholder="Password" required>
+                    </p>
+                    <button type="submit" class = "login-button" id ="loginButton">Login</button>
                     
-                    <div class="formButtons">
-                        <button type="submit" class="post-btn">Post</button>
-                        <button type="button" class="clear-btn" id ="clearButton">Clear</button>
-                        
-
-                    </div>
                 </fieldset>
             </form>
         </section>
-    </main>
-
-    <footer>
-        <p>Copyright &copy; 2026 Calvin Marciano</p>
-    </footer>
+</main>
 </body>
 </html>

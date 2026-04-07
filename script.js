@@ -7,3 +7,6 @@ function handleClear() {
   }
   // If cancelled, nothing happens
 }
+
+let button = document.getElementById('clearButton');
+button.addEventListener('click', handleClear);
